@@ -1,0 +1,17 @@
+﻿conceptid,PrefLabel,AltLabels,ParentConceptid,ConceptType,Provider
+SITE_FUNCTION_TYPE:1,Agricultural/Pastoral,Agricultural/Pastoral,SITE_FUNCTION_TYPE_AUTHORITY_DOCUMENT.csv,Index,Eamena
+SITE_FUNCTION_TYPE:2,Defensive/Fortification,Defensive/Fortification,SITE_FUNCTION_TYPE_AUTHORITY_DOCUMENT.csv,Index,Eamena
+SITE_FUNCTION_TYPE:3,Domestic,Domestic,SITE_FUNCTION_TYPE_AUTHORITY_DOCUMENT.csv,Index,Eamena
+SITE_FUNCTION_TYPE:4,Entertainment/Leisure,Entertainment/Leisure,SITE_FUNCTION_TYPE_AUTHORITY_DOCUMENT.csv,Index,Eamena
+SITE_FUNCTION_TYPE:5,Funerary,Funerary,SITE_FUNCTION_TYPE_AUTHORITY_DOCUMENT.csv,Index,Eamena
+SITE_FUNCTION_TYPE:6,Hunting/Fishing,Hunting/Fishing,SITE_FUNCTION_TYPE_AUTHORITY_DOCUMENT.csv,Index,Eamena
+SITE_FUNCTION_TYPE:y,Hydrological,Hydrological,SITE_FUNCTION_TYPE_AUTHORITY_DOCUMENT.csv,Index,Eamena
+SITE_FUNCTION_TYPE:8,Industrial/Productive,Industrial/Productive,SITE_FUNCTION_TYPE_AUTHORITY_DOCUMENT.csv,Index,Eamena
+SITE_FUNCTION_TYPE:9,Infrastructure/Transport,Infrastructure/Transport,SITE_FUNCTION_TYPE_AUTHORITY_DOCUMENT.csv,Index,Eamena
+SITE_FUNCTION_TYPE:10,Military,Military,SITE_FUNCTION_TYPE_AUTHORITY_DOCUMENT.csv,Index,Eamena
+SITE_FUNCTION_TYPE:11,Maritime,Maritime,SITE_FUNCTION_TYPE_AUTHORITY_DOCUMENT.csv,Index,Eamena
+SITE_FUNCTION_TYPE:12,Public (e.g. official/government),Public (e.g. official/government),SITE_FUNCTION_TYPE_AUTHORITY_DOCUMENT.csv,Index,Eamena
+SITE_FUNCTION_TYPE:13,Religious,Religious,SITE_FUNCTION_TYPE_AUTHORITY_DOCUMENT.csv,Index,Eamena
+SITE_FUNCTION_TYPE:14,Status/Display/Monumental,Status/Display/Monumental,SITE_FUNCTION_TYPE_AUTHORITY_DOCUMENT.csv,Index,Eamena
+SITE_FUNCTION_TYPE:15,Trade/Commercial,Trade/Commercial,SITE_FUNCTION_TYPE_AUTHORITY_DOCUMENT.csv,Index,Eamena
+SITE_FUNCTION_TYPE:16,Unknown,Unknown,SITE_FUNCTION_TYPE_AUTHORITY_DOCUMENT.csv,Index,Eamena

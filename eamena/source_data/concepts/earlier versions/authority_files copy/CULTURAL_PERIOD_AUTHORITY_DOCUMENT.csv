@@ -1,0 +1,359 @@
+conceptid,PrefLabel,AltLabels,ParentConceptid,ConceptType,Provider
+PERIOD:001,Lower Palaeolithic (North Africa),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:002,Palaeolithic (North Africa),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:003,Middle Palaeolithic/Aterian/Acheulian (North Africa),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:004,Upper Palaeolithic (Western Sahara),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:005,Upper Palaeolithic/Ibero-Maur (Cyrenaica),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:006,Upper Palaeolithic/Ibero-Maur/Dabban (North Africa),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:007,Capsian (Cyrenaica),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:008,Mesolithic (North Africa),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:009,Epipalaeolithic/Capsian,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:010,Mesolithic (Fazzan),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:011,Neolithic (Cyrenaica),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:012,Neolithic (North Africa),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:013,Pastoral (Fazzan),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:014,Neolithic (Tripolitania),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:015,Neolithic/Capsian (North/Central Tunisia and Algeria),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:016,Neolithic (Morocco),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:017,Neolithic (Western Sahara),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:018,Late Neolithic/Bronze Age (North/Central Tunisia and Algeria),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:019,Early Proto-historic (North/Central Tunisia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:020,Early Proto-historic (Tripolitania),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:021,Early Proto-historic (Cyrenaica),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:022,Numide Ancienne (Central Tunisia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:023,Early Proto-historic (Algeria and Morocco),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:024,Early Iron Age/Archaic (North Africa),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:025,Early Garamantian (Fazzan),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:026,Early Proto-historic/Caballine (Western Sahara),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:027,Punic/Phoenician (North/Central Tunisia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:028,Proto-historic/Punic (Tripolitania),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:029,Archaic (Cyrenaica),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:030,Late Proto-historic (Algeria and Morocco),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:031,Numide Moyenne (Central Tunisia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:032,Classical (Cyrenaica),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:033,Punic/Phoenician (Algeria and Morocco),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:034,Iron Age/Punic/Classical (North Africa),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:035,PU Garamantia (Fazzan),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:036,Late Proto-historic/Caballine,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:037,Late Punic (North/Central Tunisia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:038,Numide Recente (Central Tunisia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:039,Early Hellenistic (Cyrenaica),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:040,Numidian/Mauretanian Kingdoms (Algeria),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:041,Late Punic/Mauretanian Kingdoms (Morocco),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:042,Late Proto-historic/Numidian (Tripolitania),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:043,Hellenistic/Early Roman (North Africa),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:044,Early Roman (North/Central Tunisia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:045,Late Hellenistic (Cyrenaica),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:046,Client Kingdom (Algeria and Morocco),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:047,Roman Imperial (North Africa),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:048,Classic Garamantian (Fazzan),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:049,Roman Era historic/Camelid (Western Sahara),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:050,Roman Provincial (Tripolitania and North/Central Tunisia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:051,Roman Provincial (Cyrenaica),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:052,Roman Provincial (Algeria and Morocco),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:053,Late Antique I (Morocco),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:054,Late Roman (Cyrenaica),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:055,"Late Roman (Tripolitania, North/Central Tunisia and Algeria)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:056,Late Roman (North Africa),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:057,Late Antique/Camelid,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:058,Late Garamantian (Fazzan),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:059,Byzantine (Cyrenaica),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:060,Late Antique II (Morocco),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:061,"Vandal (Tripolitania, North/Central Tunisia)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:062,Vandal/Berber Kingdoms (Algeria),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:063,Byzantine (Tripolitania and North/Central Tunisia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:064,Byzantine (North Africa),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:065,Byzantine/Berber Kingdoms (Algeria),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:066,Early Medieval (North Africa),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:067,Early Medieval/Saharan Trading Towns (Western Sahara),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:068,Early Medieval/Ummayyad/Aghlabid/Fatamid (North/Central Tunisia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:069,Early Medieval/Ummayyad/Rustamid/Fatamid (Algeria),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:070,Early Medieval/Idrisid/Sijilmas (Morocco),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:071,Early Medieval/Post-Garamantian (Fazzan),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:072,Late Medieval (North Africa),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:073,Late Medieval (Cyrenaica),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:074,Late Medieval (Tripolitania),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:075,Later Medieval/Zirid/Almohad/Hafsid (North/Central Tunisia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:076,Later Medieval/Berber dynasties (Morocco),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:077,Later Medieval/Maqil Arab (Western Sahara),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:078,Later Medieval/Almohad/Hafsid/Zayyanid (Algeria),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:079,Late Medieval (Fazzan),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:080,Early Modern (North Africa),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:081,Beys (Algeria),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:082,Saadi/Alaouite (Morocco),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:083,Early Modern (Western Sahara),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:084,Early Ottoman/Beys (North/Central Tunisia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:085,"Early Ottoman (Cyrenaica, Fazzan and Tripolitania)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:086,"Late Ottoman (Cyrenaica, Fazzan and Tripolitania)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:087,Ottoman/Colonial (North Africa),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:088,French/Spanish Colonial (Morocco),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:089,French Colonial (Algeria),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:090,French Colonial (Western Sahara),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:091,French Colonial (North/Central Tunisia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:092,"Italian/British Colonial (Cyrenaica, Fazzan and Tripolitania)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:093,WWI-WWII (North Africa),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:094,Contemporary (North Africa),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:095,Contemporary (North/Central Tunisia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:096,"Contemporary/Present (Cyrenaica, Fazzan and Tripolitania)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:097,Contemporary/Present (Morocco),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:098,Contemporary/Present (Western Sahara),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:099,Contemporary/Present (Algeria),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:100,Lower Palaeolithic (Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:101,Middle Palaeolithic (Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:102,Early Middle Palaeolithic (Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:103,Mid-Middle Palaeolithic (Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:104,Late Middle Palaeolithic (Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:105,Transitional Palaeolithic (Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:106,Upper Palaeolithic (Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:107,Late Palaeolithic (Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:108,Epipalaeolithic (Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:109,Neolithic (Saharan Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:110,Early Neolithic (Saharan Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:111,Middle Neolithic (Saharan Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:112,Late Neolithic (Saharan Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:113,Predynastic Period (Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:114,Predynastic Neolithic (Lower Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:115,Predynastic Maadi Cultural Complex (Lower Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:116,Predynastic Badarian (Upper Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:117,Predynastic Naqada I/Amratian (Upper Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:118,Predynastic Naqada II/Gerzean (Upper Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:119,Predynastic Naqada III (Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:120,Early Dynastic (Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:121,"Early Dynastic, 1st Dynasty (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:122,"Early Dynastic, 2nd Dynasty (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:123,Old Kingdom (Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:124,"Old Kingdom, 3rd Dynasty (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:125,"Old Kingdom, 4th Dynasty (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:126,"Old Kingdom, 5th Dynasty (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:127,"Old Kingdom, 6th Dynasty (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:128,"Old Kingdom, 7th-8th Dynasty (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:129,First Intermediate Period (Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:130,"First Intermediate Period, 9th-10th Dynasty (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:131,"First Intermediate Period, 11th Dynasty, (Egypt, Thebes only)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:132,Middle Kingdom (Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:133,"Middle Kingdom, 11th Dynasty (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:134,"Middle Kingdom, 12th Dynasty (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:135,"Middle Kingdom, 13th Dynasty (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:136,"Middle Kingdom, 14th Dynasty (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:137,Second Intermediate Period (Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:138,"Second Intermediate Period, 15th Dynasty (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:139,"Second Intermediate Period, 16th Dynasty (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:140,"Second Intermediate Period, 17th Dynasty (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:141,New Kingdom (Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:142,"New Kingdom, 18th Dynasty (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:143,"New Kingdom, Ramessid (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:144,"New Kingdom, Ramessid, 19th Dynasty (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:145,"New Kingdom, Ramessid, 20th Dynasty (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:146,Third Intermediate Period (Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:147,"Third Intermediate Period, 21st Dynasty (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:148,"Third Intermediate Period, 22nd Dynasty (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:149,"Third Intermediate Period, 23rd Dynasty (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:150,"Third Intermediate Period, 24th Dynasty (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:151,"Third Intermediate Period, 25th Dynasty (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:152,Late Dynastic (Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:153,"Late Dynastic, 26th Dynasty (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:154,"Late Dynastic, 27th Dynasty/1st Persian Period (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:155,"Late Dynastic, 28th Dynasty (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:156,"Late Dynastic, 29th Dynasty (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:157,"Late Dynastic, 20th Dynasty (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:158,"Late Dynastic, 2nd Persian Period",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:159,"Ptolemaic Period, Macedonian/Ptolemaic Dynasties",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:160,Roman (Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:161,"Roman, Julio-Claudian",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:162,"Roman, Flavian",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:163,"Roman, Nerva/Antonine",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:164,"Roman, Severan",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:165,"Roman, 3rd Century",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:166,"Roman, Tetrarchic",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:167,"Roman, Constantinian",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:168,"Roman, Jovian/Justinian/Valentinian",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:169,Byzantine (Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:170,Medieval (Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:171,"Medieval, Early Caliphate (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:172,"Medieval, Early Autonomous (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:173,"Medieval, Fatimid (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:174,"Medieval, Ayyubid (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:175,"Medieval, Mamluk, Bahri (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:176,"Medieval, Mamluk, Circassian (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:177,Ottoman (Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:178,"Ottoman, Napoleonic occupation (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:179,"Colonial, British (Egypt)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:180,Kingdom of Egypt,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:181,Contemporary (Egypt),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:182,WWI,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:183,WWII,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:184,Lower Palaeolithic (N. Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:185,Lower Palaeolithic (S. Levant & Arabia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:186,Palaeolithic (Levant & Arabia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:187,Achelo-Yabrudian (N. Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:188,Middle Palaeolithic (Levant & Arabia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:189,Upper Palaeolithic (Levant & Arabia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:190,Epipalaeolithic (Levant & Arabia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:191,Post-Paleolithic (Non-Diagnostic Stone),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:192,Natufian,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:193,Pre-Pottery Neolithic A (Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:194,Pre-Pottery Neolithic (Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:195,"Early Neolithic (Negev, Sinai)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:196,Pre-Pottery Neolithic B (Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:197,Neolithic (Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:198,Earlier Pottery Neolithic/Pre-Pottery Neolithic C,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:199,Early Pottery Neolithic (Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:200,Pottery Neolithic (Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:201,Hassuna,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:202,Yarmoukian,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:203,Pottery Neolithic/Late Neolithic (Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:204,Late Neolithic (Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:205,Halaf,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:206,"Late Neolithic (Negev, Sinai)",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:207,Prehistoric (Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:208,Wadi Rabah,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:209,Early Chalcolithic (Northern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:210,Early Chalcolithic/Pre-Ghassulian (Southern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:211,Chalcolithic (Southern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:212,Chalcolithic (Northern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:213,Ubaid,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:214,Middle Chalcolithic (Northern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:215,Late Ubaid-Early Chalcolithic (Northern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:216,Late Chalcolithic/Ghassulian (Southern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:217,Eneolithique (Southern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:218,Late Chalcolithic 1 (Santa Fe/Northern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:219,Late Chalcolithic (Northern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:220,Late Chalcolithic 2 (Santa Fe/Northern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:221,Late Chalcolithic-EBA Transition (Southern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:222,Late Chalcolithic 3 (Santa Fe/Northern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:223,Uruk,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:224,Late Chalcolithic 4 (Santa Fe/Northern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:225,Early EBA1 (Southern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:226,EBA 1 (Southern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:227,Early Bronze Age (Southern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:228,Later EBA1 (Southern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:229,Late Chalcolithic 5 (Santa Fe/Northern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:230,Jemdat Nasr,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:231,Early EBA (Northern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:232,EBA (Northern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:233,EBA 2 (Southern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:234,Ninevite V,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:235,Early Dynastic I,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:236,Early Dynastic II,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:237,EBA 3 (Southern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:238,Middle EBA Northern Middle Euphrates,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:239,Early Dynastic III,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:240,Middle EBA Southern Middle Euphrates,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:241,Middle-Late EBA Northern Middle Euphrates,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:242,Late EBA (Northern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:243,Middle-Late EBA Southern Middle Euphrates,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:244,EBA 4 (Southern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:245,Late EBA Northern Middle Euphrates,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:246,Akkadian Period,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:247,Late EBA Southern Middle Euphrates,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:248,Early Bronze Age-Middle Bronze Age Transition (Northern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:249,Ur III Period,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:250,Middle Bronze Age I (Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:251,Middle Bronze Age (Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:252,Khabur,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:253,Old Babylonian Period,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:254,Middle Bronze Age I (Northern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:255,Middle Bronze Age II (Southern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:256,LBA 1 (Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:257,Nuzi,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:258,Late Bronze Age (Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:259,Mitanni,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:260,Kassite,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:261,LBA 2 (Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:262,Late Late Bronze Age (Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:263,Middle Assyrian,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:264,Iron 1 (Southern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:265,Early Iron Age (Southern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:266,Early Iron Age (Northern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:267,Iron Age (Southern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:268,Iron Age (Northern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:269,Iron 2 (Southern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:270,Middle Iron Age (Northern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:271,Late Assyrian,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:272,Iron 3 (Southern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:273,Neo-Babylonian,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:274,Late Iron Age (Northern Levant),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:275,Persian,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:276,Post Assyrian,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:277,Early Hellenistic,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:278,Hellenistic,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:279,Seleucid Kings,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:280,Seleucid,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:281,Classical,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:282,Parthian (Arsacid) Kings,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:283,Late Hellenistic,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:284,Nabatean (Material Culture),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:285,Early Roman,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:286,Generic Roman,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:287,Parthian,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:288,Middle Roman,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:289,Sassanian Shahs,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:290,Late Roman,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:291,Sassanian,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:292,Eastern Roman (Byzantine Empire),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:293,Byzantine,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:294,Heraclian Dynasty,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:295,Islamic 1,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:296,Ummayyad,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:297,Early Islamic,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:298,Islamic,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:299,Islamic 2,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:300,Abbasid,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:301,Fatimid,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:302,Islamic 3,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:303,Medieval,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:304,Middle Islamic,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:305,Crusader,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:306,Islamic 4,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:307,Ayyubid,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:308,Islamic 5,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:309,Mamluk,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:310,Late Islamic,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:311,Islamic 6,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:312,Early Ottoman,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:313,Ottoman,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:314,Islamic 7,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:315,Middle Ottoman,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:316,Islamic 8,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:317,Late Ottoman,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:318,Islamic (Mandate Periods),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:319,"Islamic (""Modern"")",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:320,Lower Palaeolithic (S. Levant & Arabia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:321,Palaeolithic (Levant & Arabia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:322,Middle Palaeolithic (Levant & Arabia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:323,Upper Palaeolithic (Levant & Arabia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:324,Upper/Late Palaeolithic (Arabia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:325,Epipalaeolithic (Levant & Arabia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:326,Early Holocene/Late Palaeolithic (Arabia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:327,Wadi Wutayya (Oman),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:328,Early Neolithic (Arabia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:329,Qatar B Group (Arabia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:330,Middle Neolithic (Arabia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:331,Arabian Bifacial System (Material),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:332,Late Neolithic (Arabia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:333,"Ras al-Hamra, Bir Bir'a and Bandar Jissa Facies",,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:334,Bronze Age (SW Arabia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:335,Hafit,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:336,Bronze Age (Khawlan),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:337,Umm an Nar Period,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:338,Early Dilmun Period,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:339,Bronze Age (Dhamar),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:340,Wadi Suq,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:341,Bronze Age (SW Arabia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:342,Middle Dilmun Period,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:343,Late Bronze Age/Late Wadi Suq,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:344,Middle Dilmun (Kassite) Period,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:345,Sayhad Complex,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:346,Iron Age I (SE Arabia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:347,Late Dilmun Period,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:348,Iron Age II (SE Arabia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:349,Early Iron Age (Yemen),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:350,Iron Age III (SE Arabia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:351,Late Iron Age (Yemen),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:352,Late Pre-Islamic A (Arabia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:353,Late Pre-Islamic (Arabia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:354,Late/Final Pre-Islamic (Arabia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:355,Late Pre-Islamic B (Arabia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:356,Himyarite Kingdom (Yemen),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:357,Late Pre-Islamic C (Arabia),,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena
+PERIOD:358,Final Pre-Islamic/Sassanian,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,Eamena

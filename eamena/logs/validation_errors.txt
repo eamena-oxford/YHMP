@@ -1,0 +1,1 @@
+ERROR ROW: 86695 - POINT( ) is not a properly formatted geometry.

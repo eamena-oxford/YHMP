@@ -1,0 +1,17 @@
+*.DS_Store
+*.pyc
+*.xslx
+
+eamena/source_data/business_data
+eamena/elasticsearch
+eamena/.htaccess
+eamena/uploadedfiles
+
+Procfile
+virtualenv/ENV
+tests/elasticsearch
+tests/log
+arches/db/install/install_db.sql
+arches/db/install/truncate_db.sql
+arches/install/elasticsearch-1.4.1.zip
+
