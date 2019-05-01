@@ -2,10 +2,10 @@
 *.pyc
 *.xslx
 
-eamena/source_data/business_data
 eamena/elasticsearch
 eamena/.htaccess
 eamena/uploadedfiles
+eamena/settings_local.py
 
 Procfile
 virtualenv/ENV
@@ -14,4 +14,6 @@ tests/log
 arches/db/install/install_db.sql
 arches/db/install/truncate_db.sql
 arches/install/elasticsearch-1.4.1.zip
-eamena/logs
+eamena/logs/*.txt
+
+.idea/
