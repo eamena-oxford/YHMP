@@ -4,7 +4,6 @@
 
 eamena/elasticsearch
 eamena/.htaccess
-eamena/uploadedfiles
 eamena/settings_local.py
 
 Procfile
