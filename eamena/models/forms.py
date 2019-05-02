@@ -832,6 +832,7 @@ class ActorSummaryForm(ResourceForm):
     def update(self, data, files):
         self.update_nodes('ACTOR_APPELLATION.E82', data)
         self.update_nodes('ORGANISATION_TYPE.E55', data)
+        self.update_nodes('MODERN_COUNTRY_TERRITORY.E55', data)
         return
         
     def load(self, lang):
@@ -845,6 +846,12 @@ class ActorSummaryForm(ResourceForm):
                 'branch_lists': self.get_nodes('ORGANISATION_TYPE.E55'),
                 'domains': {
                     'ORGANISATION_TYPE.E55': Concept().get_e55_domain('ORGANISATION_TYPE.E55')
+                }
+            }
+            self.data['MODERN_COUNTRY_TERRITORY.E55'] = {
+                'branch_lists': self.get_nodes('MODERN_COUNTRY_TERRITORY.E55'),
+                'domains': {
+                    'MODERN_COUNTRY_TERRITORY.E55': Concept().get_e55_domain('MODERN_COUNTRY_TERRITORY.E55')
                 }
             }
 

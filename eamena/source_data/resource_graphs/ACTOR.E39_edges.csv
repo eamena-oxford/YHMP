@@ -39,3 +39,11 @@ Source,Target,Type,Id,Label,Weight
 81,3,Directed,83,P131,1.0
 81,20,Directed,82,P131,1.0
 10,82,Directed,3015,P1,1.0
+10,83,Directed,91,P2,1.0
+83,84,Directed,92,-P71,1.0
+10,85,Directed,87,P1,1
+85,86,Directed,88,P78,1
+57,87,Directed,89,P2,1
+87,88,Directed,90,-P71,1
+6,89,Directed,84,P87,1
+89,90,Directed,85,-P71,1
