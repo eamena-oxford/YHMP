@@ -1,5 +1,0 @@
-﻿conceptid,PrefLabel,AltLabels,ParentConceptid,ConceptType,Provider
-SITE_MORPHOLOGY_TYPE:1,Positive/Built Feature,Positive/Built Feature,SITE_MORPHOLOGY_TYPE_AUTHORITY_DOCUMENT.csv,Index,Eamena
-SITE_MORPHOLOGY_TYPE:2,Surface Feature,Surface Feature,SITE_MORPHOLOGY_TYPE_AUTHORITY_DOCUMENT.csv,Index,Eamena
-SITE_MORPHOLOGY_TYPE:3,Negative/Cut/Dug Feature,Negative/Cut/Dug Feature,SITE_MORPHOLOGY_TYPE_AUTHORITY_DOCUMENT.csv,Index,Eamena
-SITE_MORPHOLOGY_TYPE:4,Unknown,Unknown,SITE_MORPHOLOGY_TYPE_AUTHORITY_DOCUMENT.csv,Index,Eamena
