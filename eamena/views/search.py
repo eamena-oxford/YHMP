@@ -29,7 +29,10 @@ from arches.app.utils.betterJSONSerializer import JSONSerializer, JSONDeserializ
 from arches.app.search.search_engine_factory import SearchEngineFactory
 from arches.app.search.elasticsearch_dsl_builder import Bool, Match, Query, Nested, Terms, GeoShape, Range
 from django.utils.translation import ugettext as _
+from django.contrib.auth.decorators import login_required, user_passes_test
 
+
+@user_passes_test(lambda u: u.groups.filter(name='read').count() != 0, login_url='/auth/')
 def home_page(request):
     lang = request.GET.get('lang', settings.LANGUAGE_CODE)
     min_max_dates = models.Dates.objects.aggregate(Min('val'), Max('val'))
@@ -43,6 +46,8 @@ def home_page(request):
         }, 
         context_instance=RequestContext(request))
 
+
+@user_passes_test(lambda u: u.groups.filter(name='read').count() != 0, login_url='/auth/')
 def search_results(request):
     query = build_search_results_dsl(request)
     results = query.search(index='entity', doc_type='') 

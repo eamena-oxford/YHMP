@@ -34,8 +34,10 @@ from django.contrib.gis.geos import GEOSGeometry
 import binascii
 from arches.app.utils.encrypt import Crypter
 from arches.app.utils.spatialutils import getdates
+from django.contrib.auth.decorators import login_required, user_passes_test
 
 
+@user_passes_test(lambda u: u.groups.filter(name='read').count() != 0, login_url='/auth/')
 def report(request, resourceid):
     lang = request.GET.get('lang', request.LANGUAGE_CODE)
     page = request.GET.get('page', 1)
