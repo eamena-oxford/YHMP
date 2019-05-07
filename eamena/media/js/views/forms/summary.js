@@ -15,6 +15,17 @@ define(['jquery',
                     $(this).find('input').trigger('change'); 
                 });
 
+                // Will set certainty to N/A if chosen type is Unknown
+                var site_function = $('#resource-measurement-type');
+                site_function.on('change', function(evt) {
+                    self.checkUnknown(evt, partner);
+                });
+
+                // Will set certainty to N/A if chosen period is Unknown
+                $('#cultural-period').on('change', function(evt) {
+                    self.checkUnknown(evt, $('#cultural-period-certainty'));
+                });
+
                 this.addBranchList(new BranchList({
                     el: this.$el.find('#names-section')[0],
                     data: this.data,

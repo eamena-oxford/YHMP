@@ -1,4 +1,4 @@
-define(['jquery', 'backbone', 'knockout', 'underscore', 'plugins/knockout-select2', 'plugins/knockout-summernote'], function ($, Backbone, ko, _) {
+define(['jquery', 'backbone', 'knockout', 'underscore', 'plugins/knockout-select2', 'plugins/knockout-summernote'], function ($, Backbone, ko, _, koselect2) {
     return Backbone.View.extend(
     /** @lends Base.prototype */
     {
@@ -169,6 +169,41 @@ define(['jquery', 'backbone', 'knockout', 'underscore', 'plugins/knockout-select
 // 
 //             }, this); 
             return hasRules;
+        },
+
+        /**
+         * Set certainty node to NA if unknown selected
+         * @param evt
+         * @param partner is sister node to be set
+         */
+        checkUnknown: function(evt, partner){
+            if (evt.hasOwnProperty('added') && evt.added.text === 'Unknown') {
+                var initialattr = partner[0].getAttribute('data-bind');
+                var searchres = initialattr.match(/dataKey:\s*'(.*)'/);
+                var nodename = searchres[1];
+                _.each(this.branchLists, function(branchList) {
+                    if (branchList.viewModel.domains.hasOwnProperty(nodename)){
+                        var domain = branchList.viewModel.domains[nodename];
+                        var myID = '';
+                        for (var value of domain) {
+                            if ( value.text === 'Not Applicable') {
+                                partner[0].value = value.id;
+                                myID = value.id;
+                            }
+                        }
+                        if (myID !== '') {
+                            valueaccess = function () {
+                                return {
+                                    value: function () {
+                                        return myID
+                                    }, dataKey: nodename
+                                }
+                            };
+                            koselect2.update(partner[0], valueaccess);
+                        }
+                    }
+                }, this);
+            }
         },
 
         submit: function(evt){

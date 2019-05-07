@@ -2,6 +2,15 @@
     return BaseForm.extend({
         initialize: function() {
             BaseForm.prototype.initialize.apply(this);
+            var self = this;
+
+            $('#feature-type').on('change', function(evt){
+                self.checkUnknown(evt, $('#feature-type-certainty'));
+            });
+
+            $('#interpretation-type').on('change', function(evt){
+                self.checkUnknown(evt, $('#interpretation-type-certainty'));
+            });
 
             this.addBranchList(new BranchList({
                 el: this.$el.find('#feature-section')[0],

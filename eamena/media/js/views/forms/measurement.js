@@ -2,10 +2,19 @@
     return BaseForm.extend({
         initialize: function() {
             BaseForm.prototype.initialize.apply(this);
+            var self = this;
                            
             var date_picker = $('.datetimepicker').datetimepicker({pickTime: false});
             date_picker.on('dp.change', function(evt){
                 $(this).find('input').trigger('change');
+            });
+
+            $('#disturbance-type').on('change', function(evt) {
+                self.checkUnknown(evt, $('#disturbance-type-certainty'));
+            });
+
+            $('#threat-type').on('change', function(evt) {
+                self.checkUnknown(evt, $('#threat-type-certainty'));
             });
                            
             this.addBranchList(new BranchList({
