@@ -508,7 +508,8 @@ class LocationForm(ResourceForm):
 
         #if self.resource.entitytypeid not in ['ACTOR.E39']:
         self.update_nodes('SPATIAL_COORDINATES_GEOMETRY.E47', data)
-        self.update_nodes('ADMINISTRATIVE_SUBDIVISION.E48', data)
+        self.update_nodes('DISTRICT.E53', data)
+        self.update_nodes('GOVERNATE.E53', data)
         self.update_nodes('SITE_LOCATION_CERTAINTY_TYPE.E55', data)
         self.update_nodes('SITE_SIZE_CERTAINTY_TYPE.E55', data)
         self.update_nodes('PLACE_TOPOGRAPHY_TYPE.E55', data)
@@ -571,10 +572,17 @@ class LocationForm(ResourceForm):
                 'domains': {}
             }
 
-        self.data['ADMINISTRATIVE_SUBDIVISION.E48'] = {
-            'branch_lists': self.get_nodes('ADMINISTRATIVE_SUBDIVISION.E48'),
+        self.data['DISTRICT.E53'] = {
+            'branch_lists': self.get_nodes('DISTRICT.E53'),
             'domains': {
-                'ADMINISTRATIVE_SUBDIVISION_TYPE.E55': Concept().get_e55_domain('ADMINISTRATIVE_SUBDIVISION_TYPE.E55')
+                'DISTRICT.E53': Concept().get_e55_domain('DISTRICT.E53')
+            }
+        }
+
+        self.data['GOVERNATE.E53'] = {
+            'branch_lists': self.get_nodes('GOVERNATE.E53'),
+            'domains': {
+                'GOVERNATE.E53': Concept().get_e55_domain('GOVERNATE.E53')
             }
         }
 

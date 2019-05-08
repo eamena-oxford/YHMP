@@ -20,18 +20,24 @@ define([
             var adminAreaTypeLookup = {};
             BaseForm.prototype.initialize.apply(this);
             
-            _.each(this.data["ADMINISTRATIVE_SUBDIVISION.E48"].domains["ADMINISTRATIVE_SUBDIVISION_TYPE.E55"], function (typeRecord) {
-                adminAreaTypeLookup[typeRecord.text] = typeRecord.id;
-            });
+            // _.each(this.data["ADMINISTRATIVE_SUBDIVISION.E48"].domains["ADMINISTRATIVE_SUBDIVISION_TYPE.E55"], function (typeRecord) {
+            //     adminAreaTypeLookup[typeRecord.text] = typeRecord.id;
+            // });
 
             if (includeAdminAreas) {
-                var adminAreaBranchList = new BranchList({
-                    el: this.$el.find('#admin-area-section')[0],
+                var adminGovernateBranchList = new BranchList({
+                    el: this.$el.find('#admin-governate-section')[0],
                     data: this.data,
-                    dataKey: 'ADMINISTRATIVE_SUBDIVISION.E48'
+                    dataKey: 'GOVERNATE.E53'
+                });
+                this.addBranchList(adminGovernateBranchList);
+
+                var adminAreaBranchList = new BranchList({
+                    el: this.$el.find('#admin-district-section')[0],
+                    data: this.data,
+                    dataKey: 'DISTRICT.E53'
                 });
                 this.addBranchList(adminAreaBranchList);
-                           
             }
 
             if (includeMap) {
