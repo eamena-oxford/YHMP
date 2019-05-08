@@ -513,7 +513,7 @@ class LocationForm(ResourceForm):
         self.update_nodes('SITE_LOCATION_CERTAINTY_TYPE.E55', data)
         self.update_nodes('SITE_SIZE_CERTAINTY_TYPE.E55', data)
         self.update_nodes('PLACE_TOPOGRAPHY_TYPE.E55', data)
-        self.update_nodes('GRID_ID.E42', data)
+        self.update_nodes('ELEVATION.E54', data)
         
         if self.resource.entitytypeid not in ['ACTOR.E39', 'ACTIVITY.E7', 'HISTORICAL_EVENT.E5']:
             self.update_nodes('PLACE_APPELLATION_CADASTRAL_REFERENCE.E44', data)
@@ -567,8 +567,8 @@ class LocationForm(ResourceForm):
             }
         }
 
-        self.data['GRID_ID.E42'] = {
-                'branch_lists': self.get_nodes('GRID_ID.E42'),
+        self.data['ELEVATION.E54'] = {
+                'branch_lists': self.get_nodes('ELEVATION.E54'),
                 'domains': {}
             }
 

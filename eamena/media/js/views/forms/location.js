@@ -152,7 +152,7 @@ define([
             this.addBranchList(new BranchList({
                 el: this.$el.find('#grid_ID-section')[0],
                 data: this.data,
-                dataKey: 'GRID_ID.E42',
+                dataKey: 'ELEVATION.E54',
                 rules: true,
                 validateBranch: function (nodes) {
                     return this.validateHasValues(nodes);
