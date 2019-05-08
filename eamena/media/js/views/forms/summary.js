@@ -16,9 +16,9 @@ define(['jquery',
                 });
 
                 // Will set certainty to N/A if chosen type is Unknown
-                var site_function = $('#resource-measurement-type');
+                var site_function = $('#site-function-type');
                 site_function.on('change', function(evt) {
-                    self.checkUnknown(evt, partner);
+                    self.checkUnknown(evt, $('#site-function-certainty'));
                 });
 
                 // Will set certainty to N/A if chosen period is Unknown
