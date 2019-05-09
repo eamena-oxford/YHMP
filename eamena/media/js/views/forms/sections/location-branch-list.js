@@ -308,6 +308,54 @@ define([
                 }
             });
 
+            var ConvertDMSToDD = function(degrees, minutes, seconds, direction) {
+                var dd = Number(degrees) + Number(minutes)/60 + Number(seconds)/(60*60);
+
+                if (direction === "S" || direction === "W") {
+                    dd = dd * -1;
+                } // Don't do anything for N or E
+                return dd;
+            };
+
+            var ConvertDMMToDD = function(degrees, minutes) {
+                var dd = Number(degrees) + Number(minutes)/60;
+
+                return dd;
+            };
+
+            this.$el.find('#add-lat-long').on('click', function() {
+                var lat = self.$el.find('#latinput')[0].value;
+                var lon = self.$el.find('#longinput')[0].value;
+                if (lat.match(/['°"NESW]/)) {
+                    var parts = lat.split(/[^-\d\w\.]+/);
+                    parts = parts.filter(Boolean); // remove empty strings and null
+                    var parts2 = lon.split(/[^-\d\w\.]+/);
+                    parts2 = parts2.filter(Boolean);
+                    console.log(parts, parts2);
+                    if (parts.length === 2) {
+                        console.log('Degrees Decimal Minutes');
+                        lat = ConvertDMMToDD(parts[0], parts[1]);
+                        lon = ConvertDMMToDD(parts2[0], parts2[1]);
+                    } else {
+                        console.log('Degrees Minutes Seconds');
+                        lat = ConvertDMSToDD(parts[0], parts[1], parts[2], parts[3]);
+                        lon = ConvertDMSToDD(parts2[0], parts2[1], parts2[2], parts2[3]);
+                    }
+                } else {
+                    console.log('Decimal degrees');
+                    lat = Number(lat);
+                    lon = Number(lon);
+                }
+                console.log(lon, lat);
+                var atproj = ol.proj.transform([lon,lat], 'EPSG:4326', 'EPSG:3857');
+                var point = new ol.geom.Point(atproj);
+                var feature = new ol.Feature({
+                    geometry: point
+                });
+                bulkAddFeatures([feature]);
+                self.$el.find("#inventory-home").click();
+            });
+
             featureOverlay.setMap(map.map);
 
             var modify = new ol.interaction.Modify({

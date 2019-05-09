@@ -161,6 +161,17 @@
                                             <dd class="geom-file-instructions">
                                                 {% trans '(or drag and drop the file onto the map)' %}
                                             </dd>
+
+                                            <dd class="">
+                                                <div class="arches-tool-item">
+                                                    <i class="fa fa-compass"></i>
+                                                    {% trans 'Enter latitude/longitude' %}
+                                                    <p class="geom-file-instructions">Accepts DMS, DMM and DD</p>
+                                                    <input class="form-control coord-input" id="latinput" placeholder="latitude" type="text" autocomplete="off">
+                                                    <input class="form-control coord-input" id="longinput" placeholder="longitude" type="text" autocomplete="off">
+                                                    <input type="button" id="add-lat-long" value="Add to Map" style="width:100%">
+                                                </div>
+                                            </dd>
                                             
                                         </dl>
                                         
