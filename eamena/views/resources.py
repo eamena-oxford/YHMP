@@ -271,8 +271,8 @@ def report(request, resourceid):
             entitytypeidkey = '%s_%s' % (entitytypeidkey, information_resource_type)
         related_resource_dict[entitytypeidkey].append(related_resource)
 
-
-    
+    con_graphdata = get_graph(resourceid, 'CONDITION_TYPE.E55')
+    ext_graphdata = get_graph(resourceid, 'DISTURBANCE_EXTENT_TYPE.E55')
 
     return render_to_response('resource-report.htm', {
             'geometry': JSONSerializer().serialize(result),
@@ -283,6 +283,50 @@ def report(request, resourceid):
             'related_resource_dict': related_resource_dict,
             'main_script': 'resource-report',
             'active_page': 'ResourceReport',
-            'BingDates': getdates(report_info['source']['geometry']) # Retrieving the dates of Bing Imagery
+            'BingDates': getdates(report_info['source']['geometry']), # Retrieving the dates of Bing Imagery
+            'graph_data': {'condition': json.dumps(con_graphdata), 'extent': json.dumps(ext_graphdata)}
         },
         context_instance=RequestContext(request))        
+
+
+def get_graph(resourceid, entitytypeid):
+    """
+    Will retrieve data to plot a graph based on the associated dates.
+    :param resourceid:
+    :param entitytypeid:
+    :return:
+    """
+    print "Getting the graph"
+    current = None
+    index = -1
+    ret = []
+    data = []
+
+    dates = models.EditLog.objects.filter(resourceid = resourceid).values_list('timestamp', flat=True).order_by('-timestamp').distinct('timestamp')
+    # dates = models.EditLog.objects.datetimes('timestamp', 'second', order='DESC')
+    for date in dates:
+        # ret[str(date)] = models.EditLog.objects.filter(resourceid = self.resource.entityid, timestamp = date)
+        print str(date)
+
+    for log in models.EditLog.objects.filter(resourceid = resourceid, timestamp__in = dates).values().order_by('timestamp', 'attributeentitytypeid'):
+        print log
+        if str(log['timestamp']) != current:
+            current = str(log['timestamp'])
+            ret.append({'datetime': log['timestamp'], 'log': []})
+            print 'new'
+            index = index + 1
+        if log['attributeentitytypeid'] == entitytypeid:
+            print "OF INTEREST"
+            ret[index]['log'].append(log)
+
+    for val in ret:
+        if len(val['log']) == 0:
+            continue
+        if len(val['log']) > 1:
+            print("Not enough time to distinguish between them!")
+        else:
+            date = val['datetime']
+            res = val['log'][0]['newvalue']
+            print date, res
+            data.append([str(date), res])
+    return data

@@ -12,7 +12,80 @@ require([
     'views/crypto/components/enc-base64',
     'views/crypto/rollups/aes',
     'views/crypto/components/mode-cfb',
-], function($,crypto, _, arches, bootstrap, MapView, ol, ciphercore, ko, utils, encbase, aes, cfb) {
+    'highcharts'
+], function($,crypto, _, arches, bootstrap, MapView, ol, ciphercore, ko, utils, encbase, aes, cfb, Highcharts) {
+    var drawCharts = function(type, data) {
+        var categories = [];
+        if (type === 'condition') {
+            categories = [
+                'unknown',
+                'destroyed',
+                'very bad',
+                'poor',
+                'fair',
+                'good'
+            ];
+        } else if (type === 'extent') {
+            categories = [
+                'unknown',
+                '91-100%',
+                '61-90%',
+                '31-60%',
+                '11-30%',
+                '1-10%',
+                'No Visible/Known'
+            ]
+        }
+        var graphdata = JSON.parse(data);
+        for (let res of graphdata) {
+            let date = new Date(res[0]);
+            console.log(date);
+            res[0] = date.getTime();
+            var indexnum = categories.indexOf(res[1]);
+            console.log(indexnum, categories[indexnum]);
+            res[1] = indexnum;
+        }
+        var chartOptions = {
+            chart: {
+                type: 'spline'
+            },
+            title: {
+                text: null
+            },
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: { // don't display the dummy year
+                    month: '%e. %b',
+                    year: '%b'
+                },
+                title: {
+                    text: 'Date'
+                }
+            },
+            yAxis: {
+                categories: categories,
+                title: {
+                    text: type.charAt(0).toUpperCase() + type.slice(1)
+                },
+                min: 1,
+                max: categories.length - 1
+            },
+            legend: {
+                enabled: false
+            },
+            tooltip: {
+                formatter: function() {
+                    return Highcharts.dateFormat('%Y-%m-%d %H:%M', new Date(this.x)) + ': <b>' + categories[this.y] + '</b>'
+                }
+            },
+            series: [{
+                name: 'MyData',
+                data: graphdata
+            }]
+        };
+        var mychart = new Highcharts.Chart(type + '-graph', chartOptions);
+    };
+
     var ReportView = Backbone.View.extend({
 
         initialize: function(options) { 
@@ -111,7 +184,10 @@ require([
                 if ($(list).find('.report-list-item').length === 0) {
                     $(list).find('.empty-message').show();
                 }
-            })
+            });
+
+            drawCharts('condition', $('#condition-graph-data').val());
+            drawCharts('extent', $('#extent-graph-data').val());
 
         },
 
