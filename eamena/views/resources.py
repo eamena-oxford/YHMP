@@ -35,6 +35,7 @@ import binascii
 from arches.app.utils.encrypt import Crypter
 from arches.app.utils.spatialutils import getdates
 from django.contrib.auth.decorators import login_required, user_passes_test
+import datetime
 
 
 @user_passes_test(lambda u: u.groups.filter(name='read').count() != 0, login_url='/auth/')
@@ -271,8 +272,8 @@ def report(request, resourceid):
             entitytypeidkey = '%s_%s' % (entitytypeidkey, information_resource_type)
         related_resource_dict[entitytypeidkey].append(related_resource)
 
-    con_graphdata = get_graph(resourceid, 'CONDITION_TYPE.E55')
-    ext_graphdata = get_graph(resourceid, 'DISTURBANCE_EXTENT_TYPE.E55')
+    con_graphdata = get_graph(report_info['source']['graph'], 'CONDITION_TYPE_E55')
+    ext_graphdata = get_graph(report_info['source']['graph'], 'DISTURBANCE_EXTENT_TYPE_E55')
 
     return render_to_response('resource-report.htm', {
             'geometry': JSONSerializer().serialize(result),
@@ -289,44 +290,31 @@ def report(request, resourceid):
         context_instance=RequestContext(request))        
 
 
-def get_graph(resourceid, entitytypeid):
+def get_graph(data, entitytypeid):
     """
     Will retrieve data to plot a graph based on the associated dates.
     :param resourceid:
     :param entitytypeid:
     :return:
     """
-    print "Getting the graph"
-    current = None
-    index = -1
-    ret = []
-    data = []
+    res = []
 
-    dates = models.EditLog.objects.filter(resourceid = resourceid).values_list('timestamp', flat=True).order_by('-timestamp').distinct('timestamp')
-    # dates = models.EditLog.objects.datetimes('timestamp', 'second', order='DESC')
-    for date in dates:
-        # ret[str(date)] = models.EditLog.objects.filter(resourceid = self.resource.entityid, timestamp = date)
-        print str(date)
+    if 'CONDITION_ASSESSMENT_E14' in data.keys():
+        for item in data['CONDITION_ASSESSMENT_E14']:
+            if 'CONDITION_STATE_E3' in item.keys():
+                for subitem in item['CONDITION_STATE_E3']:
+                    for key, val in subitem.items():
+                        if key == entitytypeid:
+                            myval = None
+                            date = None
+                            for k, v in val[0].items():
+                                print k, v
+                                if k == entitytypeid + '__value':
+                                    myval = v
+                                elif '_DATE_E49__value' in k:
+                                    date = datetime.datetime.strptime(v, "%Y-%m-%dT%H:%M:%S")
+                            if myval and date:
+                                res.append([date.strftime("%Y-%m-%d"), myval])
 
-    for log in models.EditLog.objects.filter(resourceid = resourceid, timestamp__in = dates).values().order_by('timestamp', 'attributeentitytypeid'):
-        print log
-        if str(log['timestamp']) != current:
-            current = str(log['timestamp'])
-            ret.append({'datetime': log['timestamp'], 'log': []})
-            print 'new'
-            index = index + 1
-        if log['attributeentitytypeid'] == entitytypeid:
-            print "OF INTEREST"
-            ret[index]['log'].append(log)
+    return res
 
-    for val in ret:
-        if len(val['log']) == 0:
-            continue
-        if len(val['log']) > 1:
-            print("Not enough time to distinguish between them!")
-        else:
-            date = val['datetime']
-            res = val['log'][0]['newvalue']
-            print date, res
-            data.append([str(date), res])
-    return data

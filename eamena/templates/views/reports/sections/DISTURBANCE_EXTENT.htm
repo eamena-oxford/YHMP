@@ -12,7 +12,9 @@
             {% for CONDITION_STATE_E3 in CONDITION_ASSESSMENT_E14.CONDITION_STATE_E3 %}
                 {% for DISTURBANCE_EXTENT_TYPE_E55 in CONDITION_STATE_E3.DISTURBANCE_EXTENT_TYPE_E55 %}
                     <dd class="arches-report-subsection-item">
-                        {{ DISTURBANCE_EXTENT_TYPE_E55.DISTURBANCE_EXTENT_TYPE_E55__value }} 
+                        {{ DISTURBANCE_EXTENT_TYPE_E55.DISTURBANCE_EXTENT_TYPE_E55__value }}
+                        <span class="arches-report-subsection-item-type">- {% trans "On: " %} </span>
+                        {{ DISTURBANCE_EXTENT_TYPE_E55.DISTURBANCE_EXTENT_DATE_E49__value|cut:"T00:00:00" }}
                     </dd>
 
     

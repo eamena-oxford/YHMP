@@ -55,7 +55,7 @@ require([
             xAxis: {
                 type: 'datetime',
                 dateTimeLabelFormats: { // don't display the dummy year
-                    month: '%e. %b',
+                    month: '%e. %b %Y',
                     year: '%b'
                 },
                 title: {
@@ -185,7 +185,7 @@ require([
                     $(list).find('.empty-message').show();
                 }
             });
-
+            console.log($('#condition-graph-data').val());
             drawCharts('condition', $('#condition-graph-data').val());
             drawCharts('extent', $('#extent-graph-data').val());
 

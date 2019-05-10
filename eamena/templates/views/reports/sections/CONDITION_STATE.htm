@@ -12,10 +12,10 @@
             {% for CONDITION_STATE_E3 in CONDITION_ASSESSMENT_E14.CONDITION_STATE_E3 %}
                 {% for CONDITION_TYPE_E55 in CONDITION_STATE_E3.CONDITION_TYPE_E55 %}
                     <dd class="arches-report-subsection-item">
-                        {{ CONDITION_TYPE_E55.CONDITION_TYPE_E55__value }} 
+                        {{ CONDITION_TYPE_E55.CONDITION_TYPE_E55__value }}
+                        <span class="arches-report-subsection-item-type">- {% trans "On: " %} </span>
+                        {{ CONDITION_TYPE_E55.CONDITION_TYPE_DATE_E49__value|cut:"T00:00:00" }}
                     </dd>
-
-    
                 {% endfor %}            
 
             {% endfor %}    
