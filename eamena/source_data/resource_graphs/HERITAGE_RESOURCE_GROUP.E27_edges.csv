@@ -246,3 +246,5 @@ Source,Target,Type,Id,Label,Weight
 763,764,Directed,3018,-P71,1
 765,766,Directed,3019,-P71,1
 64,767,Directed,3020,P43,1
+12,768,Directed,3021,P78,1
+603,769,Directed,3022,P78,1

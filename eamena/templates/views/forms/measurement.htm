@@ -22,6 +22,15 @@
                                 
                                 <!-- Measurement Type -->
                                 <input style="width:40%; display:inline-block;" class="select2 arches-select2-crud-form name-type hidden-xs" id="resource-measurement-type" data-bind="select2: {value: getEditedNode('CONDITION_TYPE.E55', 'value'),  placeholder: '{% trans "Type" %}', dataKey: 'CONDITION_TYPE.E55'}"></input>&nbsp;
+
+                                <!-- date -->
+                                <div class="form-group datetimepicker" style="width:25%;">
+                                    <div class="input-group">
+                                        <input type="text" name="mydate" id="condition-date" placeholder='{% trans "(yyyy-mm-dd)" %}' class="form-control datepicker" data-date-format="YYYY-MM-DD" collapse-resource-description data-bind="{value: getEditedNode('CONDITION_TYPE_DATE.E49', 'value')} ">
+                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+
+                                    </div>
+                                </div>
                                 
                                 
                                 {% include 'views/components/add-item-button.htm' %}
@@ -30,7 +39,7 @@
                         </div>
                     </dd>
                     <!-- End Form -->
-                <div class="alert alert-danger branch-invalid-alert" role="alert" style="display:none;">{% trans "This field must be entered." %}</div>         
+                <div class="alert alert-danger branch-invalid-alert" role="alert" style="display:none;">{% trans "All fields must be entered." %}</div>
                     
                 </dl>
                 
@@ -55,7 +64,7 @@
                             <div class="arches-crud-record">
                                 <a href="javascript:void(0)" class="arches-CRUD-child" title="{% trans "Delete this measurement" %}"><i data-bind='click: $parent.deleteItem.bind($parent)' class="arches-CRUD-delete fa fa-times-circle"></i></a>
                                 <a href="javascript:void(0)" class="arches-CRUD-child arches-CRUD-edit" data-bind='click: $parent.editItem.bind($parent)' title="{% trans "Edit this measurement" %}" >
-                                    <span data-bind="{text: nodes.get('CONDITION_TYPE.E55', 'label')}" style="padding-right:2px"></span><span class="text-muted arches-crud-type-identifier"> ({% trans "type" %})</span>
+                                    <span data-bind="{text: nodes.get('CONDITION_TYPE.E55', 'label')}" style="padding-right:2px"></span><span class="text-muted arches-crud-type-identifier"> (<span data-bind='text: nodes.get("CONDITION_TYPE_DATE.E49", "value")'></span>)</span>
                                 </a>
                             </div>
                         </div>
@@ -86,7 +95,15 @@
                                 <!-- Measurement Type -->
                                 <input style="width:40%; display:inline-block;" class="select2 arches-select2-crud-form name-type hidden-xs" id="resource-measurement-type" data-bind="select2: {value: getEditedNode('DISTURBANCE_EXTENT_TYPE.E55', 'value'),  placeholder: '{% trans "Type" %}', dataKey: 'DISTURBANCE_EXTENT_TYPE.E55'}"></input>&nbsp;
                                 
-                                
+                                 <!-- date -->
+                                <div class="form-group datetimepicker" style="width:25%;">
+                                    <div class="input-group">
+                                        <input type="text" name="mydate" id="condition-date" placeholder='{% trans "(yyyy-mm-dd)" %}' class="form-control datepicker" data-date-format="YYYY-MM-DD" collapse-resource-description data-bind="{value: getEditedNode('DISTURBANCE_EXTENT_DATE.E49', 'value')} ">
+                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+
+                                    </div>
+                                </div>
+
                                 {% include 'views/components/add-item-button.htm' %}
                                 
                             </div>
@@ -118,7 +135,7 @@
                             <div class="arches-crud-record">
                                 <a href="javascript:void(0)" class="arches-CRUD-child" title="{% trans "Delete this measurement" %}"><i data-bind='click: $parent.deleteItem.bind($parent)' class="arches-CRUD-delete fa fa-times-circle"></i></a>
                                 <a href="javascript:void(0)" class="arches-CRUD-child arches-CRUD-edit" data-bind='click: $parent.editItem.bind($parent)' title="{% trans "Edit this measurement" %}">
-                                    <span data-bind="{text: nodes.get('DISTURBANCE_EXTENT_TYPE.E55', 'label')}" style="padding-right:2px"></span><span class="text-muted arches-crud-type-identifier"> ({% trans "approximate horizontal extent of site disturbed" %})</span>
+                                    <span data-bind="{text: nodes.get('DISTURBANCE_EXTENT_TYPE.E55', 'label')}" style="padding-right:2px"></span><span class="text-muted arches-crud-type-identifier"> (<span data-bind='text: nodes.get("DISTURBANCE_EXTENT_DATE.E49", "value")'></span> {% trans "approximate horizontal extent of site disturbed" %})</span>
                                 </a>
                             </div>
                         </div>

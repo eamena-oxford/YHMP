@@ -441,7 +441,7 @@ class MeasurementForm(ResourceForm):
             }
             
             self.data['DISTURBANCE_EXTENT_TYPE.E55'] = {
-                'branch_lists': self.get_nodes('DISTURBANCE_EXTENT_TYPE.E55'),
+                'branch_lists': datetime_nodes_to_dates(self.get_nodes('DISTURBANCE_EXTENT_TYPE.E55')),
                 'domains': {
                     'DISTURBANCE_EXTENT_TYPE.E55' : Concept().get_e55_domain('DISTURBANCE_EXTENT_TYPE.E55'),
                 }
@@ -449,7 +449,7 @@ class MeasurementForm(ResourceForm):
 
             
             self.data['CONDITION_TYPE.E55'] = {
-                'branch_lists': self.get_nodes('CONDITION_TYPE.E55'),
+                'branch_lists': datetime_nodes_to_dates(self.get_nodes('CONDITION_TYPE.E55')),
                 'domains': {
                     'CONDITION_TYPE.E55' : Concept().get_e55_domain('CONDITION_TYPE.E55'),
                 }
