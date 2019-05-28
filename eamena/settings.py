@@ -7,7 +7,6 @@ PACKAGE_ROOT = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentfr
 PACKAGE_NAME = PACKAGE_ROOT.split(os.sep)[-1]
 DATABASES['default']['NAME'] = 'arches_%s' % (PACKAGE_NAME)
 DATABASES['default']['POSTGIS_TEMPLATE'] = 'template_postgis_20'
-DATABASES['default']['PASSWORD'] = 'eamena1'
 ROOT_URLCONF = '%s.urls' % (PACKAGE_NAME)
 
 INSTALLED_APPS = INSTALLED_APPS + (PACKAGE_NAME,)
