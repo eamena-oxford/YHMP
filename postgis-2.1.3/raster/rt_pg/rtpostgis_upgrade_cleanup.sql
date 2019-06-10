@@ -1,0 +1,195 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+--
+-- $Id: rtpostgis_upgrade.sql.in.c 8448 2011-12-16 22:07:26Z dustymugs $
+--
+-- PostGIS Raster - Raster Type for PostGIS
+-- http://trac.osgeo.org/postgis/wiki/WKTRaster
+--
+-- Copyright (c) 2011 Regina Obe <lr@pcorp.us>
+-- Copyright (C) 2011 Regents of the University of California
+--   <bkpark@ucdavis.edu>
+--
+-- This program is free software; you can redistribute it and/or
+-- modify it under the terms of the GNU General Public License
+-- as published by the Free Software Foundation; either version 2
+-- of the License, or (at your option) any later version.
+--
+-- This program is distributed in the hope that it will be useful,
+-- but WITHOUT ANY WARRANTY; without even the implied warranty of
+-- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+-- GNU General Public License for more details.
+--
+-- You should have received a copy of the GNU General Public License
+-- along with this program; if not, write to the Free Software Foundation,
+-- Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+--
+-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+--
+-- WARNING: Any change in this file must be evaluated for compatibility.
+--
+-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+-- This section is take add / drop things like CASTS, TYPES etc. that have changed
+-- Since these are normally excluded from sed upgrade generator
+-- they must be explicitly added
+-- So that they can immediately be recreated. 
+-- It is not run thru the sed processor to prevent it from being stripped
+-- Note: We put these in separate file from drop since the extension module has
+-- to add additional logic to drop them from the extension as well
+
+
+
+
+
+
+
+
+
+
+
+
+-- drop st_bytea
+DROP CAST IF EXISTS (raster AS bytea);
+DROP FUNCTION IF EXISTS st_bytea(raster);
+
+CREATE OR REPLACE FUNCTION bytea(raster)
+    RETURNS bytea
+    AS '$libdir/rtpostgis-2.1', 'RASTER_to_bytea'
+    LANGUAGE 'c' IMMUTABLE STRICT;
+CREATE CAST (raster AS bytea)
+    WITH FUNCTION bytea(raster) AS ASSIGNMENT;
+
+-- drop box2d
+DROP CAST IF EXISTS (raster AS box2d);
+DROP FUNCTION IF EXISTS box2d(raster);
+
+-- If we are running 9.0+ we can use DO plpgsql to check
+-- and only create if not exists so no need to force a drop
+-- that way if people are using it, we will not mess them up
+DO language 'plpgsql' $$
+BEGIN
+	-- create raster box3d cast if it does not exist
+	IF NOT EXISTS(SELECT  cs.typname AS source
+		FROM pg_cast AS ca 
+        	INNER JOIN pg_type AS cs ON ca.castsource = cs.oid
+        	INNER JOIN pg_type AS ct ON ca.casttarget = ct.oid
+        	WHERE cs.typname = 'raster' AND ct.typname = 'box3d') THEN
+		CREATE OR REPLACE FUNCTION box3d(raster)
+		RETURNS box3d
+		AS 'SELECT box3d(st_convexhull($1))'
+		LANGUAGE 'sql' IMMUTABLE STRICT;
+		CREATE CAST (raster AS box3d)
+			WITH FUNCTION box3d(raster) AS ASSIGNMENT;
+    END IF;
+    
+    -- create addbandarg type if it does not exist
+	IF NOT EXISTS(SELECT typname
+		FROM pg_type 
+        	WHERE typname = 'addbandarg') THEN
+		CREATE TYPE addbandarg AS (
+			index int,
+			pixeltype text,
+			initialvalue float8,
+			nodataval float8
+		);
+    END IF;
+    
+    -- create agg_samealignment type if it does not exist
+	IF NOT EXISTS(SELECT typname 
+		FROM pg_type 
+        	WHERE typname = 'agg_samealignment') THEN
+			CREATE TYPE agg_samealignment AS (
+				refraster raster,
+				aligned boolean
+			);
+    END IF;
+    
+    -- create unionarg type if it does not exist
+	IF NOT EXISTS(SELECT typname
+		FROM pg_type 
+        	WHERE typname = 'unionarg') THEN
+			CREATE TYPE unionarg AS
+			   (nband integer,
+				uniontype text);
+    END IF;
+
+    -- create rastbandarg type if it does not exist
+	IF NOT EXISTS(SELECT typname
+		FROM pg_type 
+        	WHERE typname = 'rastbandarg') THEN
+			CREATE TYPE rastbandarg AS (
+				rast raster,
+				nband integer
+			);
+    END IF;
+
+END$$;	
+
+-- make geometry cast ASSIGNMENT
+DROP CAST IF EXISTS (raster AS geometry);
+CREATE CAST (raster AS geometry)
+	WITH FUNCTION st_convexhull(raster) AS ASSIGNMENT;
+
+-- add missing OPERATORs
+DO LANGUAGE 'plpgsql' $$
+BEGIN
+	IF NOT EXISTS (
+			SELECT
+				proname
+			FROM pg_proc f
+			JOIN pg_type r
+				ON r.typname = 'raster'
+					AND (f.proargtypes::oid[])[0] = r.oid
+			JOIN pg_type g
+				ON g.typname = 'geometry'
+					AND (f.proargtypes::oid[])[1] = g.oid
+			WHERE proname = 'raster_contained_by_geometry'
+		) THEN
+		CREATE OR REPLACE FUNCTION raster_contained_by_geometry(raster, geometry)
+			RETURNS bool
+	    AS 'select $1::geometry @ $2'
+	    LANGUAGE 'sql' IMMUTABLE STRICT;
+		CREATE OPERATOR @ (
+			LEFTARG = raster, RIGHTARG = geometry, PROCEDURE = raster_contained_by_geometry,
+	    COMMUTATOR = '~',
+		  RESTRICT = contsel, JOIN = contjoinsel
+		);
+	END IF;
+
+	IF NOT EXISTS (
+			SELECT
+				proname
+			FROM pg_proc f
+			JOIN pg_type r
+				ON r.typname = 'raster'
+					AND (f.proargtypes::oid[])[1] = r.oid
+			JOIN pg_type g
+				ON g.typname = 'geometry'
+					AND (f.proargtypes::oid[])[0] = g.oid
+			WHERE proname = 'geometry_contained_by_raster'
+		) THEN
+		CREATE OR REPLACE FUNCTION geometry_contained_by_raster(geometry, raster)
+	    RETURNS bool
+		  AS 'select $1 @ $2::geometry'
+	    LANGUAGE 'sql' IMMUTABLE STRICT;
+		CREATE OPERATOR @ (
+	    LEFTARG = geometry, RIGHTARG = raster, PROCEDURE = geometry_contained_by_raster,
+		  COMMUTATOR = '~',
+			RESTRICT = contsel, JOIN = contjoinsel
+    );
+	END IF;
+END;
+$$;
