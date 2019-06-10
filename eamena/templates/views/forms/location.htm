@@ -582,6 +582,177 @@
     <!-- End Admin Area Records -->
 </div>
 
+<div id="admin-governate-section">
+    <!-- Admin Areas -->
+    <div class="row">
+        <div class="col-xs-12">
+
+            <!-- Adminstrative Areas -->
+            <div class="padding-left-10">
+                <dl>
+
+                    <!-- Title -->
+                    <dt>
+                        <h5 id="arches-names-form" class="section-headline">{% trans 'Governorate' %}</h5>
+                    </dt>
+
+                    <!-- Admin Areas CRUD -->
+                    <dd class="arches-RDM-labels">
+                        <div class="row">
+
+                            <div class="col-sm-12 padding-left-0">
+
+                                <!-- form for screens > xs -->
+                                <form class="form-inline arches-form hidden-xs" role="form">
+                                    <div class="form-group margin-top-5" style="width: 100%">
+
+                                        <input data-bind="select2: {value: getEditedNode('GOVERNATE.E53', 'value'), placeholder: 'Governorate', dataKey: 'GOVERNATE.E53'}" style="width:50%; height: 36px; padding-top: 2px;" class="select2 arches-select2-crud-form admin-area-type" placeholder="{% trans 'Governorate' %}">&nbsp;
+
+                                        {% include 'views/components/add-item-button.htm' %}
+                                    </div>
+                                </form>
+                                <!-- fEn orm for screens > xs -->
+
+                                <!-- form for screens = xs -->
+                                <form class="form-inline arches-form hidden-sm hidden-md hidden-lg" role="form">
+                                    <div class="form-group margin-top-5" style="width: 100%">
+
+                                        <input data-bind="select2: {value: getEditedNode('GOVERNATE.E53', 'value'), placeholder: 'Governate', dataKey: 'GOVERNATE.E53'}" style="width:50%; height: 36px; padding-top: 2px;" class="select2 arches-select2-crud-form admin-area-type" placeholder="{% trans 'Governorate' %}">&nbsp;
+
+                                        <!-- Spacer (for xs screens) -->
+                                        <div class="margin-top-10 hidden-sm hidden-md hidden-lg"></div>
+
+                                        {% include 'views/components/add-item-button.htm' %}
+                                    </div>
+                                </form>
+                                <!-- fEn orm for screens = xs -->
+
+
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <!-- End Admin Areas CRUD -->
+
+    <!-- Admin Area Records -->
+    <div class="row margin-bottom-10">
+        <div class="col-xs-12">
+
+            <!-- Admin Areas -->
+            <div class="arches-crud-child-section">
+                <dl>
+                    <dd class="arches-CRUD-child-title">
+                        {% trans 'This resource is located in the following Governorate:' %}
+                    </dd>
+
+                    <div data-bind="visible: getBranchLists().length == 0" class="margin-left-5 txt-color-blue">{% trans "No Governorate Defined" %}</div>
+
+                    <div data-bind='foreach: getBranchLists()'>
+                        <dd class="margin-left-5">
+                            <div class="arches-crud-record">
+                                <a href="#" class="arches-CRUD-child" title="{% trans "Remove this relationship" %}"  data-bind="click: $parent.deleteItem.bind($parent)"><i class="arches-CRUD-delete fa fa-times-circle"></i></a>
+                                <a href="#" class="arches-CRUD-child" title="Edit this area" data-bind="click: $parent.editItem.bind($parent), text: nodes.get('GOVERNATE.E53', 'label')"></a>&nbsp;
+                            </div>
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+            <!-- End List Admin Area Records -->
+
+        </div>
+    </div>
+    <!-- End Admin Area Records -->
+</div>
+
+<div id="admin-district-section">
+    <!-- Admin Areas -->
+    <div class="row">
+        <div class="col-xs-12">
+
+            <!-- Adminstrative Areas -->
+            <div class="padding-left-10">
+                <dl>
+
+                    <!-- Title -->
+                    <dt>
+                        <h5 id="arches-names-form" class="section-headline">{% trans 'District' %}</h5>
+                    </dt>
+
+                    <!-- Admin Areas CRUD -->
+                    <dd class="arches-RDM-labels">
+                        <div class="row">
+
+                            <div class="col-sm-12 padding-left-0">
+
+                                <!-- form for screens > xs -->
+                                <form class="form-inline arches-form hidden-xs" role="form">
+                                    <div class="form-group margin-top-5" style="width: 100%">
+
+                                        <input data-bind="select2: {value: getEditedNode('DISTRICT.E53', 'value'), placeholder: 'District', dataKey: 'DISTRICT.E53'}" style="width:50%; height: 36px; padding-top: 2px;" class="select2 arches-select2-crud-form admin-area-type" placeholder="{% trans 'District' %}">&nbsp;
+
+                                        {% include 'views/components/add-item-button.htm' %}
+                                    </div>
+                                </form>
+                                <!-- fEn orm for screens > xs -->
+
+                                <!-- form for screens = xs -->
+                                <form class="form-inline arches-form hidden-sm hidden-md hidden-lg" role="form">
+                                    <div class="form-group margin-top-5" style="width: 100%">
+
+
+                                        <input data-bind="select2: {value: getEditedNode('DISTRICT.E53', 'value'), placeholder: 'District', dataKey: 'DISTRICT.E53'}" style="width:50%; height: 36px; padding-top: 2px;" class="select2 arches-select2-crud-form admin-area-type" placeholder="{% trans 'District' %}">&nbsp;
+
+                                        <!-- Spacer (for xs screens) -->
+                                        <div class="margin-top-10 hidden-sm hidden-md hidden-lg"></div>
+
+                                        {% include 'views/components/add-item-button.htm' %}
+                                    </div>
+                                </form>
+                                <!-- fEn orm for screens = xs -->
+
+
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <!-- End Admin Areas CRUD -->
+
+    <!-- Admin Area Records -->
+    <div class="row margin-bottom-10">
+        <div class="col-xs-12">
+
+            <!-- Admin Areas -->
+            <div class="arches-crud-child-section">
+                <dl>
+                    <dd class="arches-CRUD-child-title">
+                        {% trans 'This resource is located in the following District:' %}
+                    </dd>
+
+                    <div data-bind="visible: getBranchLists().length == 0" class="margin-left-5 txt-color-blue">{% trans "No District Defined" %}</div>
+
+                    <div data-bind='foreach: getBranchLists()'>
+                        <dd class="margin-left-5">
+                            <div class="arches-crud-record">
+                                <a href="#" class="arches-CRUD-child" title="{% trans "Remove this relationship" %}"  data-bind="click: $parent.deleteItem.bind($parent)"><i class="arches-CRUD-delete fa fa-times-circle"></i></a>
+                                <a href="#" class="arches-CRUD-child" title="Edit this area" data-bind="click: $parent.editItem.bind($parent), text: nodes.get('DISTRICT.E53', 'label')"></a>
+                            </div>
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+            <!-- End List Admin Area Records -->
+
+        </div>
+    </div>
+    <!-- End Admin Area Records -->
+</div>
+
 
 {% if resourcetypeid != 'ACTOR.E39' %}
     {% if resourcetypeid != 'ACTIVITY.E7' and resourcetypeid != 'HERITAGE_RESOURCE_GROUP.E27' and resourcetypeid != 'HISTORICAL_EVENT.E5' %}
@@ -721,181 +892,10 @@
     </div>
 </div>
 <!-- End Resource Location Descriptions -->
-    
 
-    <div id="admin-governate-section">
-        <!-- Admin Areas -->
-        <div class="row">
-            <div class="col-xs-12">
-
-                <!-- Adminstrative Areas -->
-                <div class="padding-left-10">
-                    <dl>
-
-                        <!-- Title -->
-                        <dt>
-                            <h5 id="arches-names-form" class="section-headline">{% trans 'Governate' %}</h5>
-                        </dt>
-
-                        <!-- Admin Areas CRUD -->
-                        <dd class="arches-RDM-labels">
-                            <div class="row">
-                                
-                                <div class="col-sm-12 padding-left-0">
-                                    
-                                    <!-- form for screens > xs -->
-                                    <form class="form-inline arches-form hidden-xs" role="form">
-                                        <div class="form-group margin-top-5" style="width: 100%">
-                                           
-                                            <input data-bind="select2: {value: getEditedNode('GOVERNATE.E53', 'value'), placeholder: 'Governate', dataKey: 'GOVERNATE.E53'}" style="width:50%; height: 36px; padding-top: 2px;" class="select2 arches-select2-crud-form admin-area-type" placeholder="{% trans 'Governate' %}">&nbsp;
-
-                                            {% include 'views/components/add-item-button.htm' %}
-                                        </div>
-                                    </form>
-                                    <!-- fEn orm for screens > xs -->
-
-                                    <!-- form for screens = xs -->
-                                    <form class="form-inline arches-form hidden-sm hidden-md hidden-lg" role="form">
-                                        <div class="form-group margin-top-5" style="width: 100%">
-                                           
-                                            <input data-bind="select2: {value: getEditedNode('GOVERNATE.E53', 'value'), placeholder: 'Governate', dataKey: 'GOVERNATE.E53'}" style="width:50%; height: 36px; padding-top: 2px;" class="select2 arches-select2-crud-form admin-area-type" placeholder="{% trans 'Governate' %}">&nbsp;
-
-                                            <!-- Spacer (for xs screens) -->
-                                            <div class="margin-top-10 hidden-sm hidden-md hidden-lg"></div>
-
-                                            {% include 'views/components/add-item-button.htm' %}
-                                        </div>
-                                    </form>
-                                    <!-- fEn orm for screens = xs -->
-
-
-                                </div>
-                            </div>
-                        </dd>
-                    </dl>
-                </div>
-            </div>
-        </div>
-        <!-- End Admin Areas CRUD -->
-
-        <!-- Admin Area Records -->
-        <div class="row margin-bottom-10">
-            <div class="col-xs-12">
-                
-                <!-- Admin Areas -->
-                <div class="arches-crud-child-section">
-                    <dl>
-                        <dd class="arches-CRUD-child-title">
-                            {% trans 'This resource is located in the following Governate:' %}
-                        </dd>
-
-                        <div data-bind="visible: getBranchLists().length == 0" class="margin-left-5 txt-color-blue">{% trans "No Governate Defined" %}</div>
-
-                        <div data-bind='foreach: getBranchLists()'>
-                            <dd class="margin-left-5">
-                                <div class="arches-crud-record">
-                                    <a href="#" class="arches-CRUD-child" title="{% trans "Remove this relationship" %}"  data-bind="click: $parent.deleteItem.bind($parent)"><i class="arches-CRUD-delete fa fa-times-circle"></i></a>
-                                    <a href="#" class="arches-CRUD-child" title="Edit this area" data-bind="click: $parent.editItem.bind($parent), text: nodes.get('GOVERNATE.E53', 'label')"></a>&nbsp;
-                                </div>
-                            </dd>
-                        </div>
-                    </dl>
-                </div>
-                <!-- End List Admin Area Records -->
-
-            </div>
-        </div>
-        <!-- End Admin Area Records -->
-    </div>
-
-    <div id="admin-district-section">
-        <!-- Admin Areas -->
-        <div class="row">
-            <div class="col-xs-12">
-
-                <!-- Adminstrative Areas -->
-                <div class="padding-left-10">
-                    <dl>
-
-                        <!-- Title -->
-                        <dt>
-                            <h5 id="arches-names-form" class="section-headline">{% trans 'District' %}</h5>
-                        </dt>
-
-                        <!-- Admin Areas CRUD -->
-                        <dd class="arches-RDM-labels">
-                            <div class="row">
-
-                                <div class="col-sm-12 padding-left-0">
-
-                                    <!-- form for screens > xs -->
-                                    <form class="form-inline arches-form hidden-xs" role="form">
-                                        <div class="form-group margin-top-5" style="width: 100%">
-
-                                            <input data-bind="select2: {value: getEditedNode('DISTRICT.E53', 'value'), placeholder: 'District', dataKey: 'DISTRICT.E53'}" style="width:50%; height: 36px; padding-top: 2px;" class="select2 arches-select2-crud-form admin-area-type" placeholder="{% trans 'District' %}">&nbsp;
-
-                                            {% include 'views/components/add-item-button.htm' %}
-                                        </div>
-                                    </form>
-                                    <!-- fEn orm for screens > xs -->
-
-                                    <!-- form for screens = xs -->
-                                    <form class="form-inline arches-form hidden-sm hidden-md hidden-lg" role="form">
-                                        <div class="form-group margin-top-5" style="width: 100%">
-
-
-                                            <input data-bind="select2: {value: getEditedNode('DISTRICT.E53', 'value'), placeholder: 'District', dataKey: 'DISTRICT.E53'}" style="width:50%; height: 36px; padding-top: 2px;" class="select2 arches-select2-crud-form admin-area-type" placeholder="{% trans 'District' %}">&nbsp;
-
-                                            <!-- Spacer (for xs screens) -->
-                                            <div class="margin-top-10 hidden-sm hidden-md hidden-lg"></div>
-
-                                            {% include 'views/components/add-item-button.htm' %}
-                                        </div>
-                                    </form>
-                                    <!-- fEn orm for screens = xs -->
-
-
-                                </div>
-                            </div>
-                        </dd>
-                    </dl>
-                </div>
-            </div>
-        </div>
-        <!-- End Admin Areas CRUD -->
-
-        <!-- Admin Area Records -->
-        <div class="row margin-bottom-10">
-            <div class="col-xs-12">
-
-                <!-- Admin Areas -->
-                <div class="arches-crud-child-section">
-                    <dl>
-                        <dd class="arches-CRUD-child-title">
-                            {% trans 'This resource is located in the following District:' %}
-                        </dd>
-
-                        <div data-bind="visible: getBranchLists().length == 0" class="margin-left-5 txt-color-blue">{% trans "No District Defined" %}</div>
-
-                        <div data-bind='foreach: getBranchLists()'>
-                            <dd class="margin-left-5">
-                                <div class="arches-crud-record">
-                                    <a href="#" class="arches-CRUD-child" title="{% trans "Remove this relationship" %}"  data-bind="click: $parent.deleteItem.bind($parent)"><i class="arches-CRUD-delete fa fa-times-circle"></i></a>
-                                    <a href="#" class="arches-CRUD-child" title="Edit this area" data-bind="click: $parent.editItem.bind($parent), text: nodes.get('DISTRICT.E53', 'label')"></a>
-                                </div>
-                            </dd>
-                        </div>
-                    </dl>
-                </div>
-                <!-- End List Admin Area Records -->
-
-            </div>
-        </div>
-        <!-- End Admin Area Records -->
-    </div>
 
     {% if resourcetypeid != 'ACTIVITY.E7' and resourcetypeid != 'HISTORICAL_EVENT.E5' %}
-        <hr class="devider arches-RDM-divider">
+
 
         <div id="parcel-section">
             <!-- Cadastral References CRUD -->
