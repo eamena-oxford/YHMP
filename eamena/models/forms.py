@@ -55,7 +55,7 @@ class SummaryForm(ResourceForm):
     def update(self, data, files):
         self.update_nodes('NAME.E41', data)
         self.update_nodes('SITE_FUNCTION_TYPE.E55', data)
-        self.update_nodes('CULTURAL_PERIOD.E55', data)
+        self.update_nodes('PERIODIZATION_ASSIGNMENT.E13', data)
         self.update_nodes('TIME-SPAN_PHASE.E52', data)
         self.update_nodes('ASSESSMENT_TYPE.E55', data)
         self.update_nodes('SITE_ID.E42', data)
@@ -77,9 +77,13 @@ class SummaryForm(ResourceForm):
                 'branch_lists': self.get_nodes('SITE_OVERALL_ARCHAEOLOGICAL_CERTAINTY_TYPE.E55'),
                 'domains': {'SITE_OVERALL_ARCHAEOLOGICAL_CERTAINTY_TYPE.E55' : Concept().get_e55_domain('SITE_OVERALL_ARCHAEOLOGICAL_CERTAINTY_TYPE.E55')}
             }
-            self.data['CULTURAL_PERIOD.E55'] = {
-                'branch_lists': self.get_nodes('CULTURAL_PERIOD.E55'),
-                'domains': {'CULTURAL_PERIOD.E55' : Concept().get_e55_domain('CULTURAL_PERIOD.E55'),'CULTURAL_PERIOD_CERTAINTY_TYPE.E55' : Concept().get_e55_domain('CULTURAL_PERIOD_CERTAINTY_TYPE.E55')
+            self.data['PERIODIZATION_ASSIGNMENT.E13'] = {
+                'branch_lists': self.get_nodes('PERIODIZATION_ASSIGNMENT.E13'),
+                'domains': {
+                    'CULTURAL_PERIOD.E55': Concept().get_e55_domain('CULTURAL_PERIOD.E55'),
+                    'CULTURAL_PERIOD_CERTAINTY_TYPE.E55' : Concept().get_e55_domain('CULTURAL_PERIOD_CERTAINTY_TYPE.E55'),
+                    'CULTURAL_SUBPERIOD.E55': Concept().get_e55_domain('CULTURAL_SUBPERIOD.E55'),
+                    'CULTURAL_SUBPERIOD_CERTAINTY_TYPE.E55': Concept().get_e55_domain('CULTURAL_SUBPERIOD_CERTAINTY_TYPE.E55')
                 }
             }
             self.data['TIME-SPAN_PHASE.E52'] = {

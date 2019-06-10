@@ -82,10 +82,30 @@ define(['jquery',
                 this.addBranchList(new BranchList({
                      el: this.$el.find('#culturalperiod-section')[0],
                      data: this.data,
-                     dataKey: 'CULTURAL_PERIOD.E55',
+                     dataKey: 'PERIODIZATION_ASSIGNMENT.E13',
                      rules: true,
                      validateBranch: function (nodes) {
-                           return this.validateHasValues(nodes);
+                         if (!this.validateHasValues(nodes)) {
+                             var period = 0;
+                             var subperiod = 0;
+                             _.each(nodes, function (node) {
+                                 if (node.entitytypeid.indexOf('SUBPERIOD') !== -1) {
+                                     if (node.value !== '') {
+                                         subperiod += 1;
+                                     }
+                                 }else{
+                                     if (node.value !== '') {
+                                         period += 1;
+                                     }
+                                 }
+                             }, this);
+                             if (period === 1 || subperiod === 1) {
+                                 return false;
+                             }
+                             return true;
+                         }else{
+                             return true;
+                         }
                      }
                 }));
          
