@@ -437,70 +437,6 @@
     </div>
 </div>
 
-<div id="phase-section">
-    <div class="row">
-        <div class="col-xs-12">
-            <div class="padding-left-10">
-                
-                <dl>
-                    <!-- Title -->
-                    <dt>
-                        <h5 id="arches-measurement-form" class="section-headline">{% trans "Time-Span Phase(s) " %}</h5>
-                    </dt>
-                    <!-- Form -->
-                    <dd class="arches-RDM-labels">
-                        <div class="row">
-                            
-                            <div class="col-xs-12">
-                                
-                                <!-- Measurement Type -->
-                                <input style="width:16%; display:inline-block;" class="select2 arches-select2-crud-form name-type hidden-xs" id="resource-measurement-type" data-bind="select2: {value: getEditedNode('FROM_DATE.E55', 'value'),  placeholder: '{% trans "From date" %}', dataKey: 'FROM_DATE.E55'}"></input>&nbsp;
-                                
-                                <!-- Measurement Unit -->
-                                <input style="width:16%; display:inline-block;" class="select2 arches-select2-crud-form name-type hidden-xs" id="resource-measurement-unit" data-bind="select2: {value: getEditedNode('TO_DATE.E55', 'value'), placeholder: '{% trans "To date" %}', dataKey: 'TO_DATE.E55'}"></input>&nbsp;
-                                
-                                {% include 'views/components/add-item-button.htm' %}
-                            
-                            </div>
-                     </dd>
-                    <!-- End Form -->
-                    <div class="alert alert-danger branch-invalid-alert" role="alert" style="display:none;">{% trans "From and To dates required." %}</div>
-                    
-                </dl>
-                
-            </div>
-        </div>
-    </div>
-    <!-- Name Records -->
-    <div class="row">
-        <div class="col-xs-12">
-            
-            <!-- Address -->
-            <div class="arches-crud-child-section">
-                <dl>
-                    <dd class="arches-CRUD-child-title">
-                        {% trans "Time Span Phase(s):" %}
-                    </dd>
-                    
-                    <dd class="margin-left-5" style="display: none;" data-bind="visible: true">
-                        <div data-bind="visible: getBranchLists().length == 0" class="txt-color-blue">{% trans "No Phases Defined" %}</div>
-                        
-                        <div data-bind='foreach: getBranchLists()'>
-                            <div class="arches-crud-record">
-                                <a href="javascript:void(0)" class="arches-CRUD-child" title="{% trans "Delete this measurement" %}"><i data-bind='click: $parent.deleteItem.bind($parent)' class="arches-CRUD-delete fa fa-times-circle"></i></a>
-                                <a href="javascript:void(0)" class="arches-CRUD-child arches-CRUD-edit" data-bind='click: $parent.editItem.bind($parent)' title="Edit this measurement">
-                                   <span data-bind="{text: nodes.get('FROM_DATE.E55', 'label')}" style="padding-right:2px"></span><span class="text-muted arches-crud-type-identifier"> ({% trans "from date" %})</span>
-                                    <span data-bind="{text: nodes.get('TO_DATE.E55', 'label')}" style="padding-right:2px"></span><span class="text-muted arches-crud-type-identifier"> ({% trans "to date" %})</span>
-                                </a>
-                            </div>
-                        </div>
-                    </dd>
-                    
-                </dl>
-            </div>
-        </div>
-    </div>
-</div>
 
 <hr class="devider arches-RDM-divider">
 
@@ -578,6 +514,78 @@
     <!-- End Name Records -->
 
 </div>
+
+    <span class="arches-CRUD-child-title" style="text-align:center;"> {% trans '(More fields)' %} <i id="plusminus" class="fa fa-plus-square"></i></span>
+
+  <!-- Beginning of Optional Fields -->
+ <div id="tobehidden" style="display: none;">
+     <hr class="devider arches-RDM-divider">
+
+     <div id="phase-section">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="padding-left-10">
+
+                    <dl>
+                        <!-- Title -->
+                        <dt>
+                            <h5 id="arches-measurement-form" class="section-headline">{% trans "Time-Span Phase(s) " %}</h5>
+                        </dt>
+                        <!-- Form -->
+                        <dd class="arches-RDM-labels">
+                            <div class="row">
+
+                                <div class="col-xs-12">
+
+                                    <!-- Measurement Type -->
+                                    <input style="width:16%; display:inline-block;" class="select2 arches-select2-crud-form name-type hidden-xs" id="resource-measurement-type" data-bind="select2: {value: getEditedNode('FROM_DATE.E55', 'value'),  placeholder: '{% trans "From date" %}', dataKey: 'FROM_DATE.E55'}"></input>&nbsp;
+
+                                    <!-- Measurement Unit -->
+                                    <input style="width:16%; display:inline-block;" class="select2 arches-select2-crud-form name-type hidden-xs" id="resource-measurement-unit" data-bind="select2: {value: getEditedNode('TO_DATE.E55', 'value'), placeholder: '{% trans "To date" %}', dataKey: 'TO_DATE.E55'}"></input>&nbsp;
+
+                                    {% include 'views/components/add-item-button.htm' %}
+
+                                </div>
+                         </dd>
+                        <!-- End Form -->
+                        <div class="alert alert-danger branch-invalid-alert" role="alert" style="display:none;">{% trans "From and To dates required." %}</div>
+
+                    </dl>
+
+                </div>
+            </div>
+        </div>
+        <!-- Name Records -->
+        <div class="row">
+            <div class="col-xs-12">
+
+                <!-- Address -->
+                <div class="arches-crud-child-section">
+                    <dl>
+                        <dd class="arches-CRUD-child-title">
+                            {% trans "Time Span Phase(s):" %}
+                        </dd>
+
+                        <dd class="margin-left-5" style="display: none;" data-bind="visible: true">
+                            <div data-bind="visible: getBranchLists().length == 0" class="txt-color-blue">{% trans "No Phases Defined" %}</div>
+
+                            <div data-bind='foreach: getBranchLists()'>
+                                <div class="arches-crud-record">
+                                    <a href="javascript:void(0)" class="arches-CRUD-child" title="{% trans "Delete this measurement" %}"><i data-bind='click: $parent.deleteItem.bind($parent)' class="arches-CRUD-delete fa fa-times-circle"></i></a>
+                                    <a href="javascript:void(0)" class="arches-CRUD-child arches-CRUD-edit" data-bind='click: $parent.editItem.bind($parent)' title="Edit this measurement">
+                                       <span data-bind="{text: nodes.get('FROM_DATE.E55', 'label')}" style="padding-right:2px"></span><span class="text-muted arches-crud-type-identifier"> ({% trans "from date" %})</span>
+                                        <span data-bind="{text: nodes.get('TO_DATE.E55', 'label')}" style="padding-right:2px"></span><span class="text-muted arches-crud-type-identifier"> ({% trans "to date" %})</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </dd>
+
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
 
  {% include 'views/forms/sections/SaveEditsFooter.htm' %}
 
